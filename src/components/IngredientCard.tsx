@@ -1,5 +1,5 @@
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 
@@ -12,7 +12,7 @@ interface IngredientCardProps {
 }
 
 export function IngredientCard({ icon, name, amount, unit, index }: IngredientCardProps) {
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,

@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { AnimatePresence, motion } from "framer-motion";
 import { IngredientCard } from "./IngredientCard";
-import { Leaf, Milk, Droplets, Cube } from 'lucide-react';
+import { Leaf, Milk, Droplets, Box } from 'lucide-react';
 
 interface Ingredients {
   water: number;
@@ -52,7 +52,7 @@ export function ChaiCalculator() {
     { name: "Water", amount: ingredients.water, unit: "ml", icon: <Droplets size={32} /> },
     { name: "Milk", amount: ingredients.milk, unit: "ml", icon: <Milk size={32} /> },
     { name: "Tea Leaves", amount: ingredients.teaLeaves, unit: "tbsp", icon: <Leaf size={32} /> },
-    { name: "Sugar", amount: ingredients.sugar, unit: "tsp", icon: <Cube size={32} /> },
+    { name: "Sugar", amount: ingredients.sugar, unit: "tsp", icon: <Box size={32} /> },
   ] : [];
 
   return (
